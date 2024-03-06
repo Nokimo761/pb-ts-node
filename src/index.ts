@@ -7,13 +7,13 @@ const app: Express = express();
 const port = process.env.PORT || 3000;
 
 app.get('/', (req: Request, res: Response) => {
-  res.send('Express + TypeScript Server ');
+  res.send('Test server 1');
 });
 
 app.get('/serverV1', (req: Request, res: Response) => {
-  res.send('Express + TypeScript Server ');
+  res.send('Route: serverV1');
 });
 
 app.listen(port, () => {
-  console.log(`[server]: Server is running at http://localhost:${port}`);
+  console.log(`[server]: Server is running at port ${port}`);
 });
